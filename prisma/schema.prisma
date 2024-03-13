@@ -1,0 +1,27 @@
+// This is your modified Prisma schema file:
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Course {
+  cid          Int      @id @default(autoincrement())
+  courseId     String   @unique
+  title        String
+  assessments  Assessment[]
+}
+
+model Assessment {
+  aid         Int       @id @default(autoincrement())
+  title       String
+  grade       Int
+  date        DateTime  @default(now())
+  crsId       Int       
+  course      Course?    @relation(fields: [crsId], references: [cid])
+}
+

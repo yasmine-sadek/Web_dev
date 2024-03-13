@@ -1,0 +1,37 @@
+[
+    {
+      "cid": 1,
+      "courseId": "MTH11",
+      "title": "Mathematics",
+      "assessments": [
+        {
+          "aid": 1,
+          "title": "Midterm Exam",
+          "grade": 85
+        },
+        {
+          "aid": 2,
+          "title": "Final Exam",
+          "grade": 90
+        }
+      ]
+    },
+    {
+      "cid": 2,
+      "courseId": "BCS101",
+      "title": "Computer Science",
+      "assessments": [
+        {
+          "aid": 3,
+          "title": "Programming Assignment 1",
+          "grade": 92
+        },
+        {
+          "aid": 4,
+          "title": "Project Presentation",
+          "grade": 88
+        }
+      ]
+    }
+  
+  ]
